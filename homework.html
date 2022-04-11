@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homework.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet">
+    <title></title>
+</head>
+<body>
+    <div id="words">
+    <p> Your special message will appear in <span id="countdowntimer">10 </span> Seconds</p>
+    <h1 id="demo"></h1>
+<script type="text/javascript">
+    var timeleft = 10;
+    var specialMessage = setInterval(function(){
+    timeleft--;
+    document.getElementById("countdowntimer").textContent = timeleft;
+    if(timeleft <= 0)
+        clearInterval(specialMessage);
+    },1000);
+
+    setTimeout(myFunction, 10000);
+
+    function myFunction() {
+    document.getElementById("demo").innerHTML = "You can achieve anything you set your mind to!";
+    }
+</script>
+</div>
+</body>
+</html>

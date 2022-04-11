@@ -1,0 +1,21 @@
+body {
+    background-color: pink;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Beau Rivage', cursive;
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+#words {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+    line-height: 100px;
+}
